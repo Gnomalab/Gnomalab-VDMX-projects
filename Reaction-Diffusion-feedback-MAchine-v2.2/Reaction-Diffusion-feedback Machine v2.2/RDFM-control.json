@@ -1,0 +1,799 @@
+{
+  "classArray" : [
+    "Button",
+    "Slider",
+    "Button",
+    "Slider",
+    "Slider",
+    "Button",
+    "Slider",
+    "Button",
+    "Slider",
+    "Button",
+    "Slider",
+    "Slider",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "Button",
+    "PositionElement",
+    "PositionElement",
+    "Button",
+    "Slider",
+    "Slider"
+  ],
+  "keyArray" : [
+    "PULSE",
+    "  Input Source",
+    "PULSE Fdbk",
+    "   Feedback ",
+    "HUE ADJUST",
+    "A. HUE",
+    "  Unsharp",
+    "SPLASH",
+    " Radious",
+    "EMBOSS",
+    "  Wet -dry",
+    "  Density",
+    "SHARP RGB",
+    "CROMA ZOM",
+    "CITY LIGHTS",
+    "HOLE",
+    "MIRROR",
+    "ROTATE",
+    "INV. COLOR",
+    "MONO",
+    "Luma",
+    "Darken",
+    "Negation",
+    "Screen",
+    "Lighten",
+    "Difference",
+    "                      WITDH - HEIGHT ZOOM",
+    "                                X Y POSITION",
+    "EDGE BLR",
+    "  Intensity",
+    "  amount"
+  ],
+  "uiBuilder" : {
+    "                      WITDH - HEIGHT ZOOM" : {
+      "height" : 1,
+      "grdFrm" : "{{0, 31}, {20, 5}}",
+      "width" : 1,
+      "pubNorm" : true,
+      "X" : {
+        "rcvrs" : [
+          {
+            "src" : "\/AUDIO ANALISIS\/Peak Frequency Magnitude",
+            "wantsEnbl" : true
+          }
+        ],
+        "val" : 0.5850462317466736,
+        "prsts" : [
+          {
+            "nam" : "manual",
+            "snap" : {
+              "rcvrs" : [
+                {
+                  "src" : "\/Audio Analysis 1\/Filter 1",
+                  "NFX" : {
+                    "itemArray" : [
+                      {
+                        "className" : "Threshold",
+                        "enableButton" : {
+                          "val" : true
+                        },
+                        "threshSlider" : {
+                          "val" : 0.5806062231759657
+                        }
+                      }
+                    ]
+                  },
+                  "wantsEnbl" : true
+                }
+              ],
+              "val" : 0
+            }
+          },
+          {
+            "nam" : "audio",
+            "rcvr" : {
+              "src" : "\/AUDIO ANALISIS\/Peak Frequency"
+            },
+            "snap" : {
+              "rcvrs" : [
+                {
+                  "src" : "\/AUDIO ANALISIS\/Peak Frequency Magnitude",
+                  "wantsEnbl" : true
+                }
+              ],
+              "val" : 0.2730488479137421
+            }
+          }
+        ]
+      },
+      "Y" : {
+        "rcvrs" : [
+          {
+            "src" : "\/Audio Analysis 1\/Filter 1"
+          }
+        ],
+        "val" : 1.401298464324817e-45,
+        "prsts" : [
+          {
+            "nam" : "manual",
+            "rcvr" : {
+              "src" : "\/0",
+              "wantsEnbl" : true
+            },
+            "snap" : {
+              "rcvrs" : [
+                {
+                  "src" : "\/Audio Analysis 1\/Filter 1"
+                }
+              ],
+              "val" : 1.401298464324817e-45
+            }
+          },
+          {
+            "nam" : "audio",
+            "rcvr" : {
+              "src" : "\/0",
+              "wantsEnbl" : true
+            },
+            "snap" : {
+              "rcvrs" : [
+                {
+                  "src" : "\/AUDIO ANALISIS\/Peak Frequency Magnitude",
+                  "NFX" : {
+                    "itemArray" : [
+                      {
+                        "className" : "Threshold",
+                        "enableButton" : {
+                          "val" : false
+                        },
+                        "threshSlider" : {
+                          "val" : 0.5806062231759657
+                        }
+                      }
+                    ]
+                  },
+                  "wantsEnbl" : true
+                }
+              ],
+              "val" : 0.6997019648551941
+            }
+          }
+        ]
+      },
+      "sendEnabled" : true
+    },
+    "   Feedback " : {
+      "grdFrm" : "{{6, 2}, {14, 2}}",
+      "rcvrs" : [
+        {
+          "src" : "\/<No Src Chosen>"
+        }
+      ],
+      "minRange" : 0,
+      "val" : 0.785326911407767,
+      "publishNorm" : true,
+      "sendEnabled" : true,
+      "maxRange" : 1
+    },
+    "Screen" : {
+      "mtxFlg" : true,
+      "grdFrm" : "{{1, 29}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "label" : "Screen",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/4",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "VVGridSize" : "{20, 41}",
+    "Darken" : {
+      "mtxFlg" : true,
+      "grdFrm" : "{{7, 27}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "label" : "Darken",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/2",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "VVGridMode" : true,
+    "MONO" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{15, 24}, {5, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/p",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "A. HUE" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{0, 4}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/h",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "EMBOSS" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{0, 18}, {5, 4}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/E",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "Difference" : {
+      "mtxFlg" : true,
+      "grdFrm" : "{{13, 29}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "label" : "Difference",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/6",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "PULSE Fdbk" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{0, 2}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "label" : "PULSE",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/q",
+          "fall" : true,
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "                                X Y POSITION" : {
+      "height" : 1,
+      "grdFrm" : "{{0, 36}, {20, 5}}",
+      "width" : 1,
+      "pubNorm" : true,
+      "X" : {
+        "rcvrs" : [
+          {
+            "src" : "\/INPUT PREVIEW\/Mouse Location\/X",
+            "wantsEnbl" : true
+          }
+        ],
+        "val" : 0.5,
+        "markArray" : [
+          {
+            "mval" : 0.5
+          }
+        ]
+      },
+      "Y" : {
+        "rcvrs" : [
+          {
+            "src" : "\/INPUT PREVIEW\/Mouse Location\/Y",
+            "wantsEnbl" : true
+          }
+        ],
+        "val" : 0.5,
+        "markArray" : [
+          {
+            "mval" : 0.5
+          }
+        ]
+      },
+      "sendEnabled" : true
+    },
+    "INV. COLOR" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{10, 24}, {5, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/i",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "SPLASH" : {
+      "grdFrm" : "{{0, 14}, {10, 2}}",
+      "mtxFlg" : false,
+      "toggle" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/CLOCK\/Every Beat",
+          "wantsEnbl" : true
+        }
+      ],
+      "mtxGrp" : "Button Group",
+      "val" : false,
+      "prsts" : [
+        {
+          "nam" : " M ",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/Key\/r",
+                "wantsEnbl" : true,
+                "fall" : true
+              }
+            ],
+            "val" : false
+          }
+        },
+        {
+          "nam" : " A",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/AUDIO ANALISIS\/Peak Frequency Magnitude",
+                "thr" : 0.6513947,
+                "wantsEnbl" : true,
+                "tog" : false
+              }
+            ],
+            "val" : false
+          }
+        },
+        {
+          "rcvr" : {
+            "src" : "\/CLOCK\/Bars\/04 Bars",
+            "thr" : 0,
+            "tog" : false
+          },
+          "nam" : " Beat",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/CLOCK\/Every Beat",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : true
+          },
+          "prstUpdFl2" : 5
+        }
+      ],
+      "sendEnabled" : true
+    },
+    "HUE ADJUST" : {
+      "grdFrm" : "{{6, 4}, {14, 2}}",
+      "minRange" : 0,
+      "val" : 1,
+      "publishNorm" : true,
+      "sendEnabled" : true,
+      "maxRange" : 1
+    },
+    "  Input Source" : {
+      "grdFrm" : "{{6, 0}, {14, 2}}",
+      "rcvrs" : [
+        {
+          "src" : "\/<No Src Chosen>"
+        }
+      ],
+      "minRange" : 0,
+      "val" : 0.9093408677184466,
+      "publishNorm" : true,
+      "sendEnabled" : true,
+      "maxRange" : 1
+    },
+    " Radious" : {
+      "grdFrm" : "{{10, 14}, {10, 2}}",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/AUDIO ANALISIS\/Peak Frequency Magnitude",
+          "norm" : false,
+          "wantsEnbl" : true
+        }
+      ],
+      "minRange" : 0,
+      "val" : 0.4362597465515137,
+      "publishNorm" : true,
+      "prsts" : [
+        {
+          "nam" : " M",
+          "rcvr" : {
+            "src" : "\/CONTROL\/SPLASH",
+            "tog" : false
+          },
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/Audio Analysis 1\/Filter 1"
+              }
+            ],
+            "val" : 0.1622596153846154
+          }
+        },
+        {
+          "nam" : " A",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/AUDIO ANALISIS\/Peak Frequency Magnitude",
+                "norm" : false,
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.7418982982635498
+          }
+        }
+      ],
+      "maxRange" : 1
+    },
+    "ROTATE" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{0, 24}, {5, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/y",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "  Density" : {
+      "grdFrm" : "{{5, 20}, {15, 2}}",
+      "minRange" : 0,
+      "val" : 0.2769548925339366,
+      "markArray" : [
+        {
+          "mval" : 0.2769548925339366
+        },
+        {
+          "mval" : 0.4630408653846154
+        },
+        {
+          "mval" : 0.7312641402714932
+        }
+      ],
+      "publishNorm" : true,
+      "sendEnabled" : true,
+      "maxRange" : 1
+    },
+    "MIRROR" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{5, 24}, {5, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/u",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "CITY LIGHTS" : {
+      "mtxGrp" : "Button Group",
+      "grdFrm" : "{{10, 22}, {5, 2}}",
+      "val" : false,
+      "sendEnabled" : true,
+      "toggle" : true,
+      "mtxFlg" : false
+    },
+    "SHARP RGB" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{0, 22}, {5, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : true,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/t",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "  Wet -dry" : {
+      "grdFrm" : "{{5, 18}, {15, 2}}",
+      "minRange" : 0,
+      "val" : 0.7149851527149321,
+      "markArray" : [
+        {
+          "mval" : 0.2672511312217195
+        },
+        {
+          "mval" : 0.2672511312217195
+        },
+        {
+          "mval" : 0.456412613122172
+        }
+      ],
+      "publishNorm" : true,
+      "sendEnabled" : true,
+      "maxRange" : 1
+    },
+    "EDGE BLR" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{0, 7}, {5, 4}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "prsts" : [
+        {
+          "nam" : " M",
+          "snap" : {
+            "val" : false
+          }
+        },
+        {
+          "nam" : " Sq",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/Step Seq\/Track 1",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          }
+        }
+      ]
+    },
+    "  Unsharp" : {
+      "grdFrm" : "{{0, 12}, {20, 2}}",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Audio Analysis 1\/Filter 1",
+          "wantsEnbl" : true
+        }
+      ],
+      "minRange" : 0,
+      "val" : 0.1389382102272727,
+      "publishNorm" : true,
+      "prsts" : [
+        {
+          "nam" : "manual",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/Audio Analysis 1\/Filter 1",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.1389382102272727
+          }
+        },
+        {
+          "nam" : "audio",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/AUDIO ANALISIS\/Filter 1",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.1361712495713732,
+            "minEnv" : 0.05478480871886121
+          }
+        }
+      ],
+      "maxRange" : 1
+    },
+    "Lighten" : {
+      "mtxFlg" : true,
+      "grdFrm" : "{{7, 29}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "label" : "Lighten",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/5",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "CROMA ZOM" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{5, 22}, {5, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/Y",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "Luma" : {
+      "mtxFlg" : true,
+      "grdFrm" : "{{1, 27}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "label" : "Luma",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/1",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "  amount" : {
+      "grdFrm" : "{{5, 9}, {15, 2}}",
+      "prsts" : [
+        {
+          "nam" : " M",
+          "rcvr" : {
+            "src" : "\/CONTROL\/SPLASH",
+            "tog" : false
+          },
+          "snap" : {
+            "val" : 0.8605542182922363
+          }
+        },
+        {
+          "nam" : " A",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/AUDIO ANALISIS\/Filter 2",
+                "norm" : false,
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.2552871406078339
+          }
+        }
+      ],
+      "minRange" : 0,
+      "val" : 0.144780585106383,
+      "publishNorm" : true,
+      "sendEnabled" : true,
+      "maxRange" : 1
+    },
+    "PULSE" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{0, 0}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "label" : "PULSE",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/w",
+          "fall" : true,
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "HOLE" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{15, 22}, {5, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/o",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "Negation" : {
+      "mtxFlg" : true,
+      "grdFrm" : "{{13, 27}, {6, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : true,
+      "label" : "Negation",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Key\/3",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "  Intensity" : {
+      "grdFrm" : "{{5, 7}, {15, 2}}",
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/Audio Analysis 1\/Filter 1"
+        }
+      ],
+      "minRange" : 0,
+      "val" : 0.681889960106383,
+      "publishNorm" : true,
+      "prsts" : [
+        {
+          "nam" : " M",
+          "rcvr" : {
+            "src" : "\/<No Src Chosen>",
+            "tog" : false,
+            "wantsEnbl" : true
+          },
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/Audio Analysis 1\/Filter 1"
+              }
+            ],
+            "val" : 0.2377202460106383
+          }
+        },
+        {
+          "nam" : " A",
+          "snap" : {
+            "rcvrs" : [
+              {
+                "src" : "\/AUDIO ANALISIS\/Peak Frequency Magnitude",
+                "norm" : false,
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.7418982982635498
+          }
+        }
+      ],
+      "maxRange" : 1
+    }
+  }
+}
