@@ -1,0 +1,799 @@
+{
+  "classArray" : [
+    "MultiSliderElement",
+    "MultiSliderElement",
+    "MultiSliderElement",
+    "MultiSliderElement",
+    "MultiButtonElement",
+    "MultiButtonElement",
+    "MultiButtonElement",
+    "MultiButtonElement",
+    "MultiButtonElement",
+    "Button",
+    "Button",
+    "Button",
+    "Button"
+  ],
+  "keyArray" : [
+    "Send A",
+    "Send B",
+    "Pan- Device",
+    "Tracks",
+    "track Focus",
+    "Track Control",
+    "Templates",
+    "Track Select",
+    "Send Select",
+    "Device",
+    "Mute",
+    "Solo",
+    "Record Arm"
+  ],
+  "uiBuilder" : {
+    "Send B" : {
+      "grdFrm" : "{{0, 3}, {22, 3}}",
+      "min" : 0,
+      "fill" : 0,
+      "msg" : {
+        "title" : true,
+        "sldrCount" : "{8, 1}",
+        "sldrs" : [
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [29]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [30]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.7350060786487498
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [31]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5118110236220472
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [32]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [33]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [34]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [35]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [36]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          }
+        ]
+      },
+      "max" : 1,
+      "publishNorm" : true,
+      "sendEnabled" : true
+    },
+    "Send Select" : {
+      "grdFrm" : "{{22, 6}, {5, 3}}",
+      "mbg" : {
+        "flRxr" : {
+          "src" : "\/<No Src Chosen>",
+          "useNFX" : false,
+          "scal" : false
+        },
+        "toggle" : true,
+        "mutex" : true,
+        "title" : true,
+        "btns" : [
+          {
+            "val" : false
+          },
+          {
+            "val" : true
+          }
+        ],
+        "inRxr" : {
+          "useNFX" : false,
+          "scal" : false,
+          "src" : "\/<No Src Chosen>",
+          "norm" : false
+        },
+        "btnCount" : "{2, 1}",
+        "rcvrs" : [
+          {
+            "wantsEnbl" : true,
+            "ltch" : false,
+            "src" : "\/MIDI\/ch. 8\/ctrl [106]",
+            "echNm2" : "Launch Control XL-Launch Control XL"
+          },
+          {
+            "wantsEnbl" : true,
+            "ltch" : false,
+            "src" : "\/MIDI\/ch. 8\/ctrl [107]",
+            "echNm2" : "Launch Control XL-Launch Control XL"
+          }
+        ]
+      },
+      "sendEnabled" : true,
+      "pubType" : 0
+    },
+    "Track Control" : {
+      "grdFrm" : "{{0, 19}, {22, 2}}",
+      "mbg" : {
+        "flRxr" : {
+          "src" : "\/<No Src Chosen>",
+          "useNFX" : false,
+          "scal" : false
+        },
+        "toggle" : true,
+        "mutex" : true,
+        "title" : true,
+        "btns" : [
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [73]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [74]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [75]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [76]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [89]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [90]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [91]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [84]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          }
+        ],
+        "inRxr" : {
+          "useNFX" : false,
+          "scal" : false,
+          "src" : "\/<No Src Chosen>",
+          "norm" : false
+        },
+        "btnCount" : "{8, 1}"
+      },
+      "sendEnabled" : true,
+      "pubType" : 0
+    },
+    "track Focus" : {
+      "grdFrm" : "{{0, 17}, {22, 2}}",
+      "mbg" : {
+        "flRxr" : {
+          "src" : "\/<No Src Chosen>",
+          "useNFX" : false,
+          "scal" : false
+        },
+        "toggle" : true,
+        "mutex" : true,
+        "title" : true,
+        "btns" : [
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [41]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [42]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [43]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [44]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [57]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [58]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [59]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/note [60]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : false
+          }
+        ],
+        "inRxr" : {
+          "useNFX" : false,
+          "scal" : false,
+          "src" : "\/<No Src Chosen>",
+          "norm" : false
+        },
+        "btnCount" : "{8, 1}"
+      },
+      "sendEnabled" : true,
+      "pubType" : 0
+    },
+    "Send A" : {
+      "grdFrm" : "{{0, 0}, {22, 3}}",
+      "min" : 0,
+      "fill" : 0,
+      "msg" : {
+        "title" : true,
+        "sldrCount" : "{8, 1}",
+        "sldrs" : [
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [13]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.3932801996295805
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [14]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.4274790408981597
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [15]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [16]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [17]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [18]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [19]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [20]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5039370078740157
+          }
+        ]
+      },
+      "max" : 1,
+      "publishNorm" : true,
+      "sendEnabled" : true
+    },
+    "Mute" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{23, 13}, {4, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : true,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/MIDI\/ch. 8\/note [106]",
+          "echNm2" : "Launch Control XL-Launch Control XL",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "Record Arm" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{23, 19}, {4, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : true,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/MIDI\/ch. 8\/note [108]",
+          "echNm2" : "Launch Control XL-Launch Control XL",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "Track Select" : {
+      "grdFrm" : "{{22, 3}, {5, 3}}",
+      "mbg" : {
+        "flRxr" : {
+          "src" : "\/<No Src Chosen>",
+          "useNFX" : false,
+          "scal" : false
+        },
+        "toggle" : true,
+        "mutex" : true,
+        "title" : true,
+        "btns" : [
+          {
+            "val" : false
+          },
+          {
+            "val" : true
+          }
+        ],
+        "inRxr" : {
+          "useNFX" : false,
+          "scal" : false,
+          "src" : "\/<No Src Chosen>",
+          "norm" : false
+        },
+        "btnCount" : "{2, 1}",
+        "rcvrs" : [
+          {
+            "wantsEnbl" : true,
+            "ltch" : false,
+            "src" : "\/MIDI\/ch. 8\/ctrl [106]",
+            "echNm2" : "Launch Control XL-Launch Control XL"
+          },
+          {
+            "wantsEnbl" : true,
+            "ltch" : false,
+            "src" : "\/MIDI\/ch. 8\/ctrl [107]",
+            "echNm2" : "Launch Control XL-Launch Control XL"
+          }
+        ]
+      },
+      "sendEnabled" : true,
+      "pubType" : 0
+    },
+    "VVGridMode" : true,
+    "Templates" : {
+      "grdFrm" : "{{22, 0}, {5, 3}}",
+      "mbg" : {
+        "flRxr" : {
+          "src" : "\/<No Src Chosen>",
+          "useNFX" : false,
+          "scal" : false
+        },
+        "toggle" : true,
+        "mutex" : true,
+        "title" : true,
+        "btns" : [
+          {
+            "val" : false
+          },
+          {
+            "val" : true
+          }
+        ],
+        "inRxr" : {
+          "useNFX" : false,
+          "scal" : false,
+          "src" : "\/<No Src Chosen>",
+          "norm" : false
+        },
+        "btnCount" : "{2, 1}"
+      },
+      "sendEnabled" : true,
+      "pubType" : 0
+    },
+    "Device" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{23, 10}, {4, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : true,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/MIDI\/ch. 8\/note [105]",
+          "echNm2" : "Launch Control XL-Launch Control XL",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "Solo" : {
+      "mtxFlg" : false,
+      "grdFrm" : "{{23, 16}, {4, 2}}",
+      "mtxGrp" : "Button Group",
+      "toggle" : true,
+      "val" : false,
+      "sendEnabled" : true,
+      "rcvrs" : [
+        {
+          "src" : "\/MIDI\/ch. 8\/note [107]",
+          "echNm2" : "Launch Control XL-Launch Control XL",
+          "wantsEnbl" : true
+        }
+      ]
+    },
+    "VVGridSize" : "{27, 21}",
+    "Tracks" : {
+      "grdFrm" : "{{0, 9}, {22, 8}}",
+      "min" : 0,
+      "fill" : 0,
+      "msg" : {
+        "title" : true,
+        "sldrCount" : "{8, 1}",
+        "sldrs" : [
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [77]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [78]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [79]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [80]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [81]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [82]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [83]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [84]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0
+          }
+        ]
+      },
+      "max" : 1,
+      "publishNorm" : true,
+      "sendEnabled" : true
+    },
+    "Pan- Device" : {
+      "grdFrm" : "{{0, 6}, {22, 3}}",
+      "min" : 0,
+      "fill" : 0,
+      "msg" : {
+        "title" : true,
+        "sldrCount" : "{8, 1}",
+        "sldrs" : [
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [49]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.4645669291338583
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [50]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5157512853978852,
+            "minEnv" : 0.02381608326240336
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [51]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.7952755905511811
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [52]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.5571862631477669
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [53]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.388005319081233
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [54]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.7559055118110236
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [55]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.4566929133858268
+          },
+          {
+            "rcvrs" : [
+              {
+                "src" : "\/MIDI\/ch. 8\/ctrl [56]",
+                "echNm2" : "Launch Control XL-Launch Control XL",
+                "wantsEnbl" : true
+              }
+            ],
+            "val" : 0.2992125984251969
+          }
+        ]
+      },
+      "max" : 1,
+      "publishNorm" : true,
+      "sendEnabled" : true
+    }
+  }
+}
